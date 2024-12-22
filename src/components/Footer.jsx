@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="bg-neutral-700 hidden lg:block my-5 h-[1px] w-full" />
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-10 lg:items-center">
           <p className="font-semibold text-gray-400 text-xs mt-5 lg:mt-0">
             Copyright &copy; 2024 Apple Inc. All rights reserved.
           </p>
