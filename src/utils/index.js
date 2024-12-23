@@ -10,6 +10,7 @@ import highlightThirdmv from "/assets/videos/hightlight-sec.mp4";
 import highlightFourthmv from "/assets/videos/hightlight-fourth.mp4";
 import exploremv from "/assets/videos/explore.mp4";
 import framemv from "/assets/videos/frame.mp4";
+import horsesmv from "/assets/videos/horses.mp4";
 
 import apple from "/assets/images/apple.svg";
 import search from "/assets/images/search.svg";
@@ -20,6 +21,7 @@ import replay from "/assets/images/replay.svg";
 import play from "/assets/images/play.svg";
 import pause from "/assets/images/pause.svg";
 
+import iguana from "/assets/images/iguana.jpg";
 import yellow from "/assets/images/yellow.jpg";
 import blue from "/assets/images/blue.jpg";
 import white from "/assets/images/white.jpg";
@@ -28,6 +30,9 @@ import explore1 from "/assets/images/explore1.jpg";
 import explore2 from "/assets/images/explore2.jpg";
 import chip from "/assets/images/chip.jpeg";
 import frame from "/assets/images/frame.png";
+import computer from "/assets/images/computer.jpg";
+import sos from "/assets/images/SOS.jpg";
+import road_emergency from "/assets/images/roadside_assistance.png";
 
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
@@ -37,6 +42,7 @@ export const highlightThirdVideo = highlightThirdmv;
 export const highlightFourthVideo = highlightFourthmv;
 export const exploreVideo = exploremv;
 export const frameVideo = framemv;
+export const horsesVideo = horsesmv;
 
 export const appleImg = apple;
 export const searchImg = search;
@@ -55,3 +61,7 @@ export const explore1Img = explore1;
 export const explore2Img = explore2;
 export const chipImg = chip;
 export const frameImg = frame;
+export const iguanaImg = iguana;
+export const computerImg = computer;
+export const sosLargeImg = sos;
+export const sosSmallImg = road_emergency;

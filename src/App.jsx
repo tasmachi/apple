@@ -1,3 +1,6 @@
+import ActionButton from "./components/ActionButton";
+import Emergency from "./components/Emergency";
+import Example from "./components/Example";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -17,6 +20,9 @@ const App = () => {
       <Model />
       <Features />
       <HowItWorks />
+      <Example />
+      <ActionButton />
+      <Emergency />
       <Footer />
     </main>
   );
