@@ -2,9 +2,10 @@ import React from "react";
 import { iguanaImg } from "../utils/index";
 import { ScrollTrigger } from "gsap/all";
 
+import Video from "./Video";
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Video from "./Video";
 
 const Example = () => {
   useGSAP(() => {

@@ -35,20 +35,18 @@ const Features = () => {
 
   return (
     <section className="h-full common-padding bg-zinc relative overflow-hidden">
-      <div className="screen-max-width">
+      <div className="screen-max-wdith">
         <div className="mb-12 w-full">
           <h1 id="features_title" className="section-heading">
-            Discover the Next Frontier.
+            Explore the full story.
           </h1>
         </div>
 
         <div className="flex flex-col justify-center items-center overflow-hidden">
           <div className="mt-32 mb-24 pl-24">
+            <h2 className="text-5xl lg:text-7xl font-semibold">iPhone.</h2>
             <h2 className="text-5xl lg:text-7xl font-semibold">
-              iPhone 15 Pro.
-            </h2>
-            <h2 className="text-5xl lg:text-7xl font-semibold">
-              Designed to Inspire.
+              Forged in titanium.
             </h2>
           </div>
 
@@ -72,14 +70,14 @@ const Features = () => {
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
                     src={explore1Img}
-                    alt="iPhone 15 Pro design"
+                    alt="titanium"
                     className="feature-video g_grow"
                   />
                 </div>
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
                     src={explore2Img}
-                    alt="iPhone 15 Pro in hand"
+                    alt="titanium 2"
                     className="feature-video g_grow"
                   />
                 </div>
@@ -88,22 +86,24 @@ const Features = () => {
               <div className="feature-text-container">
                 <div className="flex-1 flex-center">
                   <p className="feature-text g_text">
-                    The iPhone 15 Pro is{" "}
+                    iPhone 15 Pro is{" "}
                     <span className="text-white">
-                      more than just a phone — it's a marvel of engineering.
-                    </span>{" "}
-                    Crafted with aerospace-grade titanium, it’s as durable as it
-                    is sleek.
+                      the first iPhone to feature an aerospace-grade titanium
+                      design
+                    </span>
+                    , using the same alloy that spacecrafts use for missions to
+                    Mars.
                   </p>
                 </div>
 
                 <div className="flex-1 flex-center">
                   <p className="feature-text g_text">
-                    At the heart of the experience is{" "}
-                    <span className="text-white">unmatched innovation,</span>{" "}
-                    combining strength, lightweight materials, and impeccable
-                    design. This is the ultimate tool for creativity and
-                    productivity.
+                    Titanium has one of the best strength-to-weight ratios of
+                    any metal, making these our{" "}
+                    <span className="text-white">
+                      lightest Pro models ever.
+                    </span>
+                    You'll notice the difference the moment you pick one up.
                   </p>
                 </div>
               </div>
