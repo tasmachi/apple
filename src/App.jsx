@@ -17,11 +17,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <Highlights />
+      <Model />
       <Features />
       <HowItWorks />
-      <Example />
-      <ActionButton />
-      <Emergency />
+
       <Footer />
     </main>
   );
