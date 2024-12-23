@@ -12,6 +12,8 @@ const HowItWorks = () => {
       scrollTrigger: {
         trigger: "#chip",
         start: "20% bottom",
+        end: "10% bottom",
+        pin: true,
       },
       opacity: 0,
       scale: 2,

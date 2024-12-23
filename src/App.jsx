@@ -13,7 +13,7 @@ import * as Sentry from "@sentry/react";
 
 const App = () => {
   return (
-    <main className="bg-black touch-pan-y overflow-y-auto">
+    <main className="bg-black ">
       <Navbar />
       <Hero />
       <Highlights />
