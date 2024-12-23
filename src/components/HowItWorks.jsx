@@ -1,32 +1,61 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { chipImg, frameImg, frameVideo } from "../utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animateWithGsap } from "../utils/animations";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HowItWorks = () => {
   const videoRef = useRef();
 
   useGSAP(() => {
-    gsap.from("#chip", {
-      scrollTrigger: {
-        trigger: "#chip",
-        start: "20% bottom",
-        end: "10% bottom",
-        pin: true,
-      },
-      opacity: 0,
-      scale: 2,
-      duration: 2,
-      ease: "power2.inOut",
-    });
-
+    // gsap.from("#chip", {
+    //   scrollTrigger: {
+    //     trigger: "#chip",
+    //     start: "20% bottom",
+    //   },
+    //   opacity: 0,
+    //   scale: 2,
+    //   duration: 2,
+    //   ease: "power2.inOut",
+    // });
     animateWithGsap(".g_fadeIn", {
       opacity: 1,
       y: 0,
       duration: 1,
       ease: "power2.inOut",
     });
+  }, []);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    const playVideoEnter = () => {
+      if (videoElement) {
+        videoElement.play();
+      }
+    };
+
+    const pauseOnleave = () => {
+      if (videoElement) {
+        videoElement.pause();
+        videoElement.currentTime = 0;
+      }
+    };
+
+    ScrollTrigger.create({
+      trigger: videoElement,
+      start: "top 80%",
+      end: "bottom 20%",
+      onEnter: playVideoEnter,
+      onLeaveBack: pauseOnleave,
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
   }, []);
 
   return (
