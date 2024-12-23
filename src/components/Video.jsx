@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { frameImg, horsesVideo } from "../utils";
 import { useGSAP } from "@gsap/react";
-import { animateWithGsap } from "../utils/animations";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Video = () => {

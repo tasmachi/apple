@@ -1,15 +1,15 @@
 import React from "react";
 import { iguanaImg } from "../utils/index";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Video from "./Video";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Example = () => {
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
     gsap.to("#iguana", {
       scale: 1.5,
       duration: 0.5,

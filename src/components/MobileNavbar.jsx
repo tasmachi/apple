@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import PropTypes from "prop-types";
 import { navLists } from "../constants";
 import { gsap } from "gsap";
 

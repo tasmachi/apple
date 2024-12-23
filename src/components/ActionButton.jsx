@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { computerImg } from "../utils";
+gsap.registerPlugin(ScrollTrigger);
 
 const ActionButton = () => {
   const paragraphsRef = useRef([]);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    
 
     paragraphsRef.current.forEach((p) => {
       if (p) {

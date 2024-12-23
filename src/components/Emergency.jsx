@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { sosLargeImg, sosSmallImg } from "../utils";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
