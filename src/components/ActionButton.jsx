@@ -3,30 +3,28 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { computerImg } from "../utils";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const ActionButton = () => {
   const paragraphsRef = useRef([]);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    paragraphsRef.current.forEach((p) => {
-      if (p) {
-        gsap.fromTo(
-          p,
-          { opacity: 0, y: 20 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: p,
-              start: "top 80%",
-              toggleActions: "play reverse restart reverse",
-            },
-          }
-        );
-      }
+    paragraphsRef.current.forEach((p, index) => {
+      gsap.fromTo(
+        p,
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: p,
+            start: "top 80%",
+            toggleActions: "play reverse restart reverse",
+          },
+        }
+      );
     });
   }, []);
 
@@ -43,7 +41,10 @@ const ActionButton = () => {
             className="w-full h-auto object-cover"
           />
         </div>
-        <div className="max-w-[900px] max-sm:grid-cols-1 mx-auto grid gap-8 lg:gap-12 grid-cols-2">
+        <div
+          id="paraghs"
+          className="max-w-[900px] max-sm:grid-cols-1 mx-auto grid gap-8 lg:gap-12 grid-cols-2"
+        >
           {/* Row 1 */}
           <div className="space-y-4">
             <p
